@@ -1,0 +1,10 @@
+<p>blog-list works!</p>
+
+<Section>
+    <ul *ngFor="let blog of allBlogs">
+        <!-- <li style="list-style: none;">{{blog.title}}</li> -->
+        <li style="list-style: none; ">
+            <a [routerLink]="['/details', blog.id]">{{ blog.title }}</a>
+        </li>
+    </ul>
+</Section>

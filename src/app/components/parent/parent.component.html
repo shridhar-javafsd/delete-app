@@ -1,0 +1,8 @@
+<h3>parent works!</h3>
+
+<p>Parent data in parent comp: {{parentData}}</p>
+<p>Child data in parent comp: {{childDataInParent}}</p>
+<!-- <app-child [parentDataInChild]="parentData"></app-child> -->
+<!-- <app-child (passData)="getDataFromChild($event)"></app-child> -->
+
+<app-child [parentDataInChild]="parentData" (passData)="getDataFromChild($event)"></app-child>
